@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pNv-gG-J1I">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="C2Z-28-Hms">
+            <objects>
+                <navigationController id="pNv-gG-J1I" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vMq-pA-0NT">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ID6-4t-ZY8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YeS-5R-Xgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-361" y="153"/>
+        </scene>
+        <!--Welcome-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SideMenuSocialSignInSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D75-DL-lQo">
+                                <rect key="frame" x="40" y="345.5" width="295" height="40"/>
+                                <state key="normal" image="Facebook"/>
+                                <connections>
+                                    <action selector="buttonFacebookTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4c6-Y9-Ei0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qy3-Gr-OQB">
+                                <rect key="frame" x="39.5" y="405.5" width="295" height="40"/>
+                                <state key="normal" image="Google"/>
+                                <connections>
+                                    <action selector="buttonGooglePlusTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oSw-Ab-Kdg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This module enables you to login using your social credentials" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofv-Ke-WMO">
+                                <rect key="frame" x="40" y="125" width="296" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qd-zb-2Sf">
+                                <rect key="frame" x="165.5" y="84" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D75-DL-lQo" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="86p-wJ-VX9"/>
+                            <constraint firstItem="qy3-Gr-OQB" firstAttribute="top" secondItem="D75-DL-lQo" secondAttribute="bottom" constant="20" id="Cdh-uF-muS"/>
+                            <constraint firstItem="ofv-Ke-WMO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FVJ-Ki-uQx"/>
+                            <constraint firstItem="ofv-Ke-WMO" firstAttribute="top" secondItem="9qd-zb-2Sf" secondAttribute="bottom" constant="20" id="Orp-4W-ipx"/>
+                            <constraint firstItem="9qd-zb-2Sf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="QO8-3K-BaV"/>
+                            <constraint firstItem="9qd-zb-2Sf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="adc-eD-AQU"/>
+                            <constraint firstItem="D75-DL-lQo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="br6-a2-HSm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D75-DL-lQo" secondAttribute="trailing" constant="40" id="dPI-NR-K8e"/>
+                            <constraint firstItem="ofv-Ke-WMO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="dkv-J4-yKT"/>
+                            <constraint firstItem="qy3-Gr-OQB" firstAttribute="centerX" secondItem="D75-DL-lQo" secondAttribute="centerX" id="jnv-iJ-21s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ofv-Ke-WMO" secondAttribute="trailing" constant="39" id="k3X-ao-4BQ"/>
+                            <constraint firstItem="qy3-Gr-OQB" firstAttribute="width" secondItem="D75-DL-lQo" secondAttribute="width" id="p1R-b3-3b1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="JBX-Il-AvM"/>
+                    <connections>
+                        <segue destination="gON-uW-AQR" kind="show" identifier="userDetailSegue" id="Y5r-OA-PcY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="591" y="154"/>
+        </scene>
+        <!--User Detail View Controller-->
+        <scene sceneID="6P8-t5-p4l">
+            <objects>
+                <viewController id="gON-uW-AQR" customClass="UserDetailViewController" customModule="SideMenuSocialSignInSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bD3-3X-0uG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg1-bz-Td0">
+                                <rect key="frame" x="179" y="355" width="17" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcK-qW-gAv">
+                                <rect key="frame" x="0.0" y="614" width="375" height="53"/>
+                                <color key="backgroundColor" red="0.22745098039215686" green="0.35686274509803922" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="ceE-R7-w67"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonLogoutTapped:" destination="gON-uW-AQR" eventType="touchUpInside" id="bSs-3Y-Caa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cg1-bz-Td0" firstAttribute="centerX" secondItem="oKc-Xs-Q1K" secondAttribute="centerX" id="5aS-h4-Cnv"/>
+                            <constraint firstItem="CcK-qW-gAv" firstAttribute="leading" secondItem="oKc-Xs-Q1K" secondAttribute="leading" id="7H9-yp-Mf3"/>
+                            <constraint firstItem="CcK-qW-gAv" firstAttribute="bottom" secondItem="oKc-Xs-Q1K" secondAttribute="bottom" id="AMO-w4-5wF"/>
+                            <constraint firstItem="cg1-bz-Td0" firstAttribute="centerY" secondItem="oKc-Xs-Q1K" secondAttribute="centerY" id="BCN-6O-mbN"/>
+                            <constraint firstItem="CcK-qW-gAv" firstAttribute="trailing" secondItem="oKc-Xs-Q1K" secondAttribute="trailing" id="kgI-Uk-zZz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oKc-Xs-Q1K"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelUserName" destination="cg1-bz-Td0" id="16e-Y4-akQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8zJ-Uh-SPV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1357.5999999999999" y="152.47376311844079"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Facebook" width="311" height="40"/>
+        <image name="Google" width="311" height="40"/>
+    </resources>
+</document>
